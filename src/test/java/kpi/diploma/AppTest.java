@@ -1,4 +1,4 @@
-package kpi.org;
+package kpi.diploma;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
