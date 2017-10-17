@@ -12,6 +12,7 @@ public class App {
         if (arg.length > 0) {
             SuffixArray suffixArray = new SuffixArray(arg[0]);
             System.out.println(suffixArray.getSuffixArray());
+            System.out.println(suffixArray.getLcpArray());
         }
     }
 }
