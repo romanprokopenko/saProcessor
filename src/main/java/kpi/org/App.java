@@ -1,5 +1,7 @@
 package kpi.org;
 
+import kpi.org.suffixarray.SuffixArray;
+
 /**
  * Hello world!
  */
@@ -7,6 +9,9 @@ public class App {
 
     public static void main(String[] arg) {
 
-        System.out.println("Hello World!");
+        if (arg.length > 0) {
+            SuffixArray suffixArray = new SuffixArray(arg[0]);
+            System.out.println(suffixArray.getSuffixArray());
+        }
     }
 }
