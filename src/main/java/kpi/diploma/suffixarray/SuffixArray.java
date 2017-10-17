@@ -9,15 +9,20 @@ import java.util.List;
 public class SuffixArray {
 
     private Sais sais = new Sais();
+    private String sourceText;
     private List<Integer> suffixArray;
 
     public List<Integer> getSuffixArray() {
         return suffixArray;
     }
 
+    public String getSourceText() {
+        return sourceText;
+    }
 
-    public SuffixArray(String text) {
-        this.suffixArray = this.generateSuffixArray(text);
+    public SuffixArray(String sourceText) {
+        this.sourceText = sourceText;
+        this.suffixArray = this.generateSuffixArray(sourceText);
     }
 
     @org.jetbrains.annotations.NotNull
