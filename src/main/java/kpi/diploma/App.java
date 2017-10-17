@@ -1,6 +1,6 @@
-package kpi.org;
+package kpi.diploma;
 
-import kpi.org.suffixarray.SuffixArray;
+import kpi.diploma.suffixarray.SuffixArray;
 
 /**
  * Hello world!

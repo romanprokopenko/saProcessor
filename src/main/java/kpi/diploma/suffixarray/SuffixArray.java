@@ -1,7 +1,7 @@
-package kpi.org.suffixarray;
+package kpi.diploma.suffixarray;
 
-import kpi.org.suffixarray.library.Sais;
-import org.apache.commons.lang.ArrayUtils;
+import kpi.diploma.suffixarray.library.Sais;
+import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.Arrays;
 import java.util.List;

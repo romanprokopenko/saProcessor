@@ -1,4 +1,4 @@
-package kpi.org.suffixarray.library;
+package kpi.diploma.suffixarray.library;
 
 /*
  * sais.java for sais-java
