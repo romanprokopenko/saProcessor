@@ -41,4 +41,5 @@ public class SuffixArray {
         return Arrays.asList(ArrayUtils.toObject(temporaryArray));
     }
 
+
 }

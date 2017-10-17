@@ -9,10 +9,10 @@ public class App {
 
     public static void main(String[] arg) {
 
-        if (arg.length > 0) {
-            SuffixArray suffixArray = new SuffixArray(arg[0]);
+//        if (arg.length > 0) {
+            SuffixArray suffixArray = new SuffixArray("banana");
             System.out.println(suffixArray.getSuffixArray());
             System.out.println(suffixArray.getLcpArray());
-        }
+//        }
     }
 }
