@@ -13,4 +13,9 @@ public class SingleSubstringSearchResponse implements SuffixArrayServiceResponse
     public SingleSubstringSearchResponse(List<Integer> occurences) {
         this.occurences = occurences;
     }
+
+    @Override
+    public String toString() {
+        return occurences.toString();
+    }
 }
