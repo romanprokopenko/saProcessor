@@ -26,8 +26,8 @@ public class SuffixArray {
     }
 
     public SuffixArray(String sourceText) {
-        this.sourceText = sourceText;
-        this.suffixArray = this.constructSuffixArray(sourceText);
+        this.sourceText = sourceText + "\u0000";
+        this.suffixArray = this.constructSuffixArray(this.sourceText);
         this.lcpArray = new LcpArray(this.sourceText, this.suffixArray);
     }
 
