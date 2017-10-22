@@ -2,7 +2,7 @@ package kpi.diploma.suffixarrayservice.request;
 
 import java.util.Objects;
 
-public class LongestCommonSubstringRequest {
+public class LongestCommonSubstringSearchRequest {
 
     public static final String STRING_SEPARATOR = "\u001F";
 
@@ -25,7 +25,7 @@ public class LongestCommonSubstringRequest {
         this.secondString = secondString;
     }
 
-    public LongestCommonSubstringRequest(String firstString, String secondString) {
+    public LongestCommonSubstringSearchRequest(String firstString, String secondString) {
         this.firstString = Objects.requireNonNull(firstString);
         this.secondString = Objects.requireNonNull(secondString);
     }
