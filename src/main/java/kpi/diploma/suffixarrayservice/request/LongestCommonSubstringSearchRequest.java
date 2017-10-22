@@ -4,6 +4,8 @@ import java.util.Objects;
 
 public class LongestCommonSubstringRequest {
 
+    public static final String STRING_SEPARATOR = "\u001F";
+
     private String firstString;
     private String secondString;
 
@@ -26,5 +28,9 @@ public class LongestCommonSubstringRequest {
     public LongestCommonSubstringRequest(String firstString, String secondString) {
         this.firstString = Objects.requireNonNull(firstString);
         this.secondString = Objects.requireNonNull(secondString);
+    }
+
+    public String getUnitedStrings() {
+        return this.firstString + STRING_SEPARATOR + this.secondString;
     }
 }
