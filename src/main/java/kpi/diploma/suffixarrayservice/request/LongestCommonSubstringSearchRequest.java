@@ -25,6 +25,8 @@ public class LongestCommonSubstringSearchRequest {
         this.secondString = secondString;
     }
 
+    public LongestCommonSubstringSearchRequest() {}
+
     public LongestCommonSubstringSearchRequest(String firstString, String secondString) {
         this.firstString = Objects.requireNonNull(firstString);
         this.secondString = Objects.requireNonNull(secondString);
