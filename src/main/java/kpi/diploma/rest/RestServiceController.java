@@ -1,8 +1,8 @@
 package kpi.diploma.rest;
 
 import kpi.diploma.suffixarrayservice.SuffixArrayService;
+import kpi.diploma.suffixarrayservice.request.LongestCommonSubstringSearchRequest;
 import kpi.diploma.suffixarrayservice.request.SingleSubstringSearchRequest;
-import kpi.diploma.suffixarrayservice.response.SingleSubstringSearchResponse;
 import kpi.diploma.suffixarrayservice.response.SuffixArrayServiceResponse;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,6 +16,14 @@ public class RestServiceController {
         SuffixArrayService service = new SuffixArrayService();
         SuffixArrayServiceResponse response = service.singleSubstringSearch(request);
 
+        return response;
+    }
+
+    @RequestMapping(method = RequestMethod.POST, path = "/lcssearch")
+    public SuffixArrayServiceResponse requestLcsSearch(@RequestBody LongestCommonSubstringSearchRequest request) {
+        SuffixArrayService service = new SuffixArrayService();
+        SuffixArrayServiceResponse response = service.longestCommonSubstringSearch(request);
+        
         return response;
     }
 
