@@ -15,6 +15,16 @@ public class SingleSubstringSearchRequest {
         return searchedText;
     }
 
+    public void setSourceText(String sourceText) {
+        this.sourceText = sourceText;
+    }
+
+    public void setSearchedText(String searchedText) {
+        this.searchedText = searchedText;
+    }
+
+    public SingleSubstringSearchRequest() {}
+
     public SingleSubstringSearchRequest(String sourceText, String searchedText) {
         this.sourceText = Objects.requireNonNull(sourceText);
         this.searchedText = Objects.requireNonNull(searchedText);
